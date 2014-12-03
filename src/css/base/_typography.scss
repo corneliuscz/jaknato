@@ -95,7 +95,15 @@ blockquote {
 
     &:before {
       content: "\201D";
-      font-size: 128px;
+
+      font-size: 96px;
+      height: 56px;
+
+      @include media($large-screen) {
+        font-size: 128px;
+        height: 128px;
+      }
+
       float: left;
       top: -0.28em;
       position: relative;

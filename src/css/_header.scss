@@ -9,13 +9,16 @@ header {
   p {
     font-style: italic;
   }
+  
+  a {
+    color: #CE2340;
+  }
 }
 
 nav {
   margin-bottom: 2rem;
 
   a {
-    color: #CE2340;
     text-decoration: none;
     display: block;
     padding: 1.5rem 0em 0em 0em;
