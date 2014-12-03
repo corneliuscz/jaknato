@@ -1,0 +1,12 @@
+{
+  "name": "Jak na to - dobrá praxe RRMS",
+  "version": "0.1.0",
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11.1",
+    "bourbon": "~4.0.2",
+    "neat": "~1.7.0",
+    "normalize-css": "~3.0.2"
+  },
+  "devDependencies": {}
+}
