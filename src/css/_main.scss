@@ -4,7 +4,7 @@
   @include media($medium-screen) {
     background: url('/images/vge-web2.jpg') no-repeat scroll right -7em center #e2e2e2;
     background-size: cover;
-  }  
+  }
 }
 
 main article {
@@ -13,5 +13,5 @@ main article {
 
 
 main article.disabled {
-  color: #999;
+  color: #ddd;
 }

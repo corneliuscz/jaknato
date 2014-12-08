@@ -19,7 +19,7 @@ header, main {
       @include omega();
     }
   }
-  
+
   @include media($large-screen) {
     header {
       @include span-columns(4);
@@ -46,4 +46,5 @@ header, main {
 
 footer {
   clear: both;
+  margin-top: 4em;
 }
