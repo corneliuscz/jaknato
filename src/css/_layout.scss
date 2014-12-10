@@ -44,6 +44,32 @@ header, main {
 
 }
 
+.uvodka {
+  .container--uvodka {
+    @include row(table);
+
+    header {
+      position: absolute;
+      width: 100%;
+    }
+
+    nav {
+      display: flex;
+      align-items: stretch;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+
+      min-height: 100%;
+
+      /*position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px; */
+    }
+  }
+}
+
 footer {
   clear: both;
   margin-top: 4em;

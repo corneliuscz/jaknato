@@ -9,7 +9,7 @@ header {
   p {
     font-style: italic;
   }
-  
+
   a {
     color: $base-link-color;
   }
@@ -30,7 +30,7 @@ nav {
     }
 
     &.disabled {
-      color: #586474;
+      color: $almost-dark-gray;
       cursor: pointer;
 
       &.hover {
@@ -38,7 +38,7 @@ nav {
       }
 
       span {
-        background-color: #586474;
+        background-color: $almost-dark-gray;
       }
     }
 
@@ -52,4 +52,37 @@ nav {
       padding: 0.2rem 1rem 0.3rem 1rem;
     }
   }
+}
+
+.uvodka .container--uvodka {
+  background-color: $dark-gray;
+  color: #fff;
+
+  header {
+    background-color: transparent;
+    text-align: center;
+  }
+
+  nav {
+    margin-bottom: 0;
+
+    a {
+      padding: 1em;
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      //background: no-repeat scroll right -4em center / cover $dark-gray;
+      background: no-repeat right -36.5em top transparent;;
+
+      &.prozirave {
+        background-image: url('/images/vge-web3.jpg');
+
+        &:hover {
+          background-position: right -4em top;
+        }
+      }
+
+    }
+  }
+
 }

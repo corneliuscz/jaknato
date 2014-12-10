@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Evropské dotace ‘po Moravskoslezsku’</title>
+  <title>{{ title }}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,61 +38,23 @@
       s.parentNode.insertBefore(wf, s);
     })(); </script>
 </head>
-<body class="uvodka">
+<body class="{{class}}">
   <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-  <div class="container container--uvodka">
+  <div class="container container--{{class}}">
 
-    <header role="banner">
-  <h1>Jak na to</h1>
-  <p> Jak úspěšně a zodpovědně spravovat a investovat peníze z&nbsp;evropských fondů.</p>
-</header>
-
-    <nav role="nav">
-  <a href="prozirave.html" class="prozirave"><span class="menu-bublina">1</span> Prozíravě
-
-  <blockquote class="homeclaim">Peníze z EU investujeme spolehlivě, smysluplně a včas</blockquote>
-  </a>
-  <a href="pruhledne.html" class="disabled"><span class="menu-bublina">2</span> Průhledně
-    <blockquote class="homeclaim">Peníze z EU investujeme spolehlivě, smysluplně a včas</blockquote>
-  </a>
-  <a href="vstricne.html" class="disabled"><span class="menu-bublina">3</span> Vstřícně
-    <blockquote class="homeclaim">Peníze z EU investujeme spolehlivě, smysluplně a včas</blockquote>
-  </a>
-  <a href="jednoduse.html" class="disabled"><span class="menu-bublina">4</span> Jednoduše
-    <blockquote class="homeclaim">Peníze z EU investujeme spolehlivě, smysluplně a včas</blockquote>
-  </a>
-  <a href="spolecne.html" class="disabled"><span class="menu-bublina">5</span> Společně
-    <blockquote class="homeclaim">Peníze z EU investujeme spolehlivě, smysluplně a včas</blockquote>
-  </a>
-</nav>
-
+    {{> header_home }}
+    {{> menu_home }}
 
   </div> <!-- main container/row -->
 
   <div class="container">
     <main role="main">
-      
-
-<section id="0-uvod">
-    <h2>O projektu</h2>
-    <p>V čem je tajemství investování peněz z EU, že to někteří zvládají lépe, jiní hůře, někteří špatně nebo vůbec?</p>
-    <p>Jsme <a href="www.rr-moravskolezsko.cz">Regionální rada Moravskoslezsko</a> a&nbsp;zodpovídáme za uplatnění 20&nbsp;miliard korun z&nbsp;evropských fondů v&nbsp;Regionálním operačním programu, které jsou určené na&nbsp;rozvoj Moravskoslezského kraje.</p>
-    <p>Naši organizaci a financování projektů penězi z&nbsp;EU jsme postavili na otevřeném, průhledném a&nbsp;funkčním systému pro výběr, proplácení a kontrolu podpořených projektů. Postavili jsme ji na&nbsp;lidech, kteří naplňují vizi, strategický plán a&nbsp;cíle, kteří sdílejí společné principy a&nbsp;hodnoty. Postavili jsme ji na&nbsp;budování důvěry a&nbsp;otevřeném přístupu k&nbsp;partnerům a&nbsp;klientům.</p>
-    <p>Máme za sebou osmiletou zkušenost s&nbsp;řízením programu, dobře známe prostředí veřejné správy v&nbsp;ČR i&nbsp;zahraničí a rádi se s&nbsp;vámi podělíme o&nbsp;naši dobrou praxi a přístup k&nbsp;financování projektů evropskými penězi.</p>
-    <p>Projděte si v&nbsp;několika bodech hlavní věcná témata, pro které si myslíme, že to s&nbsp;evropskými penězi umíme dobře. </p>
-
-</section>
-
-
+      {{> body }}
     </main>
 
-    <footer role="contentinfo">
-  <img src="/images/banner.png" alt="Tento projekt je spolufinancován z ERDF">
-  <p><small>&copy; 2014 Regionální rada Moravskoslezsko.</small></p>
-</footer>
-
+    {{> footer }}
   </div> <!-- main container/row -->
 
   <!-- build:js js/vendor/modernizr.js -->

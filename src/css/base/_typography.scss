@@ -83,7 +83,7 @@ blockquote {
   margin: $base-line-height 0;
   padding-left: $base-line-height / 2;
 
-  &.bigclaim {
+  &.bigclaim, &.homeclaim {
     color: #CE2340;
 
     font-size: $base-font-size * 2.369;
@@ -109,6 +109,15 @@ blockquote {
       position: relative;
       left: -0.1em;
       font-weight: bold;
+    }
+  }
+
+  &.homeclaim {
+    font-size: 1em;
+    color: #fff;
+
+    &:before {
+      color: #CE2340;
     }
   }
 }
