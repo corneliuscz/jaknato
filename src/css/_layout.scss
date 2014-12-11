@@ -49,8 +49,11 @@ header, main {
     @include row(table);
 
     header {
-      position: absolute;
+      display: flex;
+      justify-content: flex-start;
       width: 100%;
+
+      z-index: 1000;
     }
 
     nav {
