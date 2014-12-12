@@ -28,7 +28,6 @@ nav {
 
     &:hover {
       color: #fff;
-      text-decoration: underline;
     }
 
     &.disabled {
@@ -56,22 +55,6 @@ nav {
   }
 }
 
-a.button {
-  display: inline-block;
-  margin: 0;
-  color: #fff;
-  background-color: rgba(206, 35, 64, 0.7);
-
-  padding: 0.5em 1em;
-  border-radius: 7px;
-
-  &:hover {
-    background-color: #fff;
-    color: $base-link-color;
-    text-decoration: none;
-  }
-}
-
 .uvodka .container--uvodka {
   background-color: $dark-gray;
   color: #fff;
@@ -92,32 +75,38 @@ a.button {
   nav {
     margin-bottom: 0;
 
+    a.bod {
+      padding-top: 0;
+    }
+
     div {
-      padding: 1em;
-      flex-grow: 1;
-      flex-shrink: 1;
+      padding: 2rem;
+      position: relative;
+
+      @include transition(flex-grow 0.5s ease-in-out);
 
       //background: no-repeat scroll right -4em center / cover $dark-gray;
-      background: no-repeat right -876px top 0px transparent;;
+      background: no-repeat right -960px top -130px transparent;;
 
       &:hover {
-        background-position: right -96px top 0px;
+        background-position: right -0px top -130px;
+        flex-grow: 3;
       }
 
       &.prozirave {
         background-image: url('/images/vge-web3.jpg');
       }
 
-    .bigclaim {
-      color: #fff;
-      font-size: 2em;
+      .bigclaim {
+        color: #fff;
+        font-size: 2em;
 
-      &:before {
-        color: $base-link-color;
-        font-size: 86px;
-        height: 40px;
+        &:before {
+          color: $base-link-color;
+          font-size: 86px;
+          height: 40px;
+        }
       }
-    }
     }
   }
 

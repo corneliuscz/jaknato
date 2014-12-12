@@ -8,3 +8,27 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap;
 }
+
+
+a.button {
+  @include transition(background-color 0.2s linear);
+  display: inline-block;
+
+  margin: 0;
+  padding: 0.5em 1em;
+
+  @include media($huge-screen) {
+    position: absolute;
+    bottom: 2rem;
+  }
+
+  color: #fff;
+  background-color: rgba(206, 35, 64, 0.7);
+  border-radius: 7px;
+
+  &:hover {
+    background-color: #fff;
+    color: $base-link-color;
+    text-decoration: none;
+  }
+}

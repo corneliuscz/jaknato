@@ -2,7 +2,7 @@ body {
   @include outer-container(100%);
 }
 
-header, main {
+header, main, .uvodka footer {
   padding: 2rem 2rem;
 }
 
@@ -45,6 +45,17 @@ header, main {
 }
 
 .uvodka {
+  .container {
+    main {
+      @include span-columns(12);
+    }
+
+    footer {
+      @include span-columns(12);
+    }
+
+  }
+
   .container--uvodka {
     @include row(table);
 
@@ -60,16 +71,24 @@ header, main {
       display: flex;
       align-items: stretch;
       justify-content: space-around;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
+
+      @include media($huge-screen) {
+        flex-wrap: nowrap;
+      }
 
       min-height: 100%;
 
-      /*position: absolute;
-      top: 0px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px; */
+      div {
+        flex: 1 1 20em;
+
+        @include media($huge-screen) {
+          //flex: 1 1 14em;
+          flex: 1 1 18em;
+        }
+      }
     }
+
   }
 }
 

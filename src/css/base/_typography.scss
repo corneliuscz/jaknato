@@ -50,7 +50,7 @@ p {
 }
 
 a {
-  @include transition(color 0.1s linear);
+  @include transition(color 0.2s linear);
   color: $base-link-color;
   text-decoration: none;
 
@@ -110,6 +110,14 @@ blockquote {
       left: -0.1em;
       font-weight: bold;
     }
+  }
+}
+
+.uvodka blockquote {
+  max-width: 11em;
+
+  @include media($huge-screen) {
+    max-width: 7em;
   }
 }
 

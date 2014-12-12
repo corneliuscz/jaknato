@@ -1,21 +1,63 @@
-// Place any jQuery/custom code in here.
-$(function() {
-  /*
-   * Yjist9me si velikost okna a podle toho natáhneme sloupec s fotkou v navigaci
-   */
-  var okno = $( window ).height(),
-      hlavicka = $( '.header' ).height(),
-      padding =  64; // Padding v hlavičce
-      minHeight = 480;
-  $( '.uvodka nav' ).height(okno - hlavicka - padding);
+/*global $, Modernizr, console */
 
-  $(window).on('resize', function(){
-      okno = $( window ).height();
-      hlavicka = $( '.header' ).height();
+function resizeNav(el, head, headPadding, minHeight) {
+
+  'use strict';
+
+  var okno = $(window).height(),
+    hlavicka = $(head).height();
+
+  if (okno >= minHeight) {
+    $(el).height(okno - hlavicka - headPadding);
+  }
+}
+
+function checkMq() {
+
+  'use strict';
+
+  var padding      = 64,
+    minHeight      = 600,
+    elem           = '.uvodka nav',
+    headerElem     = '.header';
+
+  if (Modernizr.mq('only screen and (min-width: 1140px)')) {
+    resizeNav(elem, headerElem, padding, minHeight);
+  } else {
+    $(elem).removeAttr( 'style' );
+  }
+}
+
+$(function () {
+
+  'use strict';
+
+  /*
+   * Zjistíme si velikost okna a podle toho natáhneme sloupec s fotkou v navigaci
+   */
+
+  checkMq();
+
+  $(window).resize(function () {
+    checkMq();
+  });
+
+/*
+  if (breakpoint === 1) {
+
+    $(elem).height(okno - hlavicka - padding);
+
+    $(window).on('resize', function () {
+      okno = $(window).height();
+      hlavicka = $(headerElem).height();
 
       if (okno >= minHeight) {
-        $( '.uvodka nav' ).height(okno - hlavicka - padding);
+        $(elem).height(okno - hlavicka - padding);
       }
-  });
+    });
+  } else {
+    // unset height
+  }
+*/
 });
 

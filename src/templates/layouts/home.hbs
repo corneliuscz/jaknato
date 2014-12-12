@@ -42,20 +42,22 @@
   <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-  <div class="container container--{{class}}">
+  <div class="container--{{class}}">
 
     {{> menu_home }}
     {{> header_home }}
 
-  </div> <!-- main container/row -->
+  </div> <!-- header container/row -->
 
   <div class="container">
     <main role="main">
       {{> body }}
     </main>
-
-    {{> footer }}
   </div> <!-- main container/row -->
+
+  <div class="container">
+   {{> footer }}
+  </div> <!-- footer container/row -->
 
   <!-- build:js js/vendor/modernizr.js -->
   <script src="bower_components/jquery/dist/jquery.js"></script>
