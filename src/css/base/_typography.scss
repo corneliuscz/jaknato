@@ -84,7 +84,7 @@ blockquote {
   padding-left: $base-line-height / 2;
 
   &.bigclaim {
-    color: #CE2340;
+    color: $base-link-color;
 
     font-size: $base-font-size * 2.369;
     font-weight: 300;
@@ -111,6 +111,14 @@ blockquote {
       font-weight: bold;
     }
   }
+}
+
+.strategicky .bigclaim {
+  max-width: 13em;
+}
+
+.pruhledne .bigclaim {
+  max-width: 14em;
 }
 
 .uvodka blockquote {

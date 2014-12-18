@@ -94,8 +94,12 @@ nav {
       }
 
       &.prozirave {
-        background-image: url('/images/vge-web3.jpg');
+        background-image: url('/images/vge-dark.jpg');
       }
+
+      /*&.pruhledne {
+        background-image: url('/images/msm-dark.jpg');
+      }*/
 
       .bigclaim {
         color: #fff;
@@ -105,6 +109,18 @@ nav {
           color: $base-link-color;
           font-size: 86px;
           height: 40px;
+        }
+      }
+
+      .advent {
+        font-size: 2em;
+        font-weight: 300;
+        color: $medium-gray;
+
+        margin-top: 3rem;
+
+        em {
+          color: $base-link-color;
         }
       }
     }

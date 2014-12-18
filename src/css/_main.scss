@@ -2,7 +2,16 @@
   background-color: #e2e2e2;
 
   @include media($medium-screen) {
-    background: url('/images/vge-web2.jpg') no-repeat scroll right -7em center #e2e2e2;
+    background: url('/images/vge-light.jpg') no-repeat scroll right -7em center #e2e2e2;
+    background-size: cover;
+  }
+}
+
+.pruhledne main {
+  background-color: #f1f1f1;
+
+  @include media($medium-screen) {
+    background: url('/images/msm-light.jpg') no-repeat scroll right -7em center #f1f1f1;
     background-size: cover;
   }
 }
