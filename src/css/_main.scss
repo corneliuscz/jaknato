@@ -16,10 +16,13 @@
   }
 }
 
-main article {
+main article p, main article h1, main article h2, main article h3 {
   max-width: 35em;
 }
 
+main article .galerie.fullw {
+  text-align: center;
+}
 
 main article.disabled {
   color: #ddd;
