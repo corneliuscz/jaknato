@@ -16,6 +16,15 @@
   }
 }
 
+.vstricne main {
+  background-color: #f1f1f1;
+
+  @include media($medium-screen) {
+    background: url('/images/khl-light.jpg') no-repeat scroll right -7em center #f1f1f1;
+    background-size: cover;
+  }
+}
+
 main article p, main article h1, main article h2, main article h3 {
   max-width: 35em;
 }
