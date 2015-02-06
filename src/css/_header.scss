@@ -131,3 +131,25 @@ nav {
   }
 
 }
+
+.nav--articles {
+  max-width: 35em;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include media($medium-screen) {
+    flex-direction: row;
+  }
+
+  a {
+    color: $base-accent-color;
+    display: inline-block;
+
+    &:hover {
+      color: $base-accent-color;
+      text-decoration: underline;
+    }
+  }
+}
